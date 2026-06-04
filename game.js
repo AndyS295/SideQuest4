@@ -257,6 +257,13 @@ const STORY = {
     text: "The storage closet is locked from the inside. You are trapped while security closes in.",
     choices: [],
   },
+  sideDoorEscape: {
+    text: "You slip through the side door as guests panic and alarms blare. The cool night air hits your face as you make your way toward the roof access.",
+    choices: [
+      { label: "Head straight to the rooftop", next: "winRooftop" },
+      { label: "Try to lose the guards in the alleys", next: "caughtFail" },
+    ],
+  },
 };
 
 let currentScene = "start";
